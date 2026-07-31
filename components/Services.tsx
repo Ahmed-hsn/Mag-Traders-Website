@@ -23,20 +23,90 @@ import {
 } from 'lucide-react';
 
 const services = [
-  { icon: CreditCard, title: 'Business Cards', desc: 'Premium quality cards with matte, gloss, spot UV, and raised print finishes.', image: 'https://images.pexels.com/photos/8374246/pexels-photo-8374246.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { icon: Heart, title: 'Wedding & Invitation Cards', desc: 'Beautifully crafted custom invitations for your special day.', image: 'https://images.pexels.com/photos/15893325/pexels-photo-15893325.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { icon: Mail, title: 'Letterheads & Envelopes', desc: 'Professional branded stationery for your corporate communications.', image: 'https://images.pexels.com/photos/8374102/pexels-photo-8374102.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { icon: FileText, title: 'Flyers/Brochures/Catalogues', desc: 'High-impact marketing materials with stunning layouts and vivid colors.', image: 'https://images.pexels.com/photos/8665042/pexels-photo-8665042.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { icon: Image, title: 'Posters & Banners', desc: 'Eye-catching posters and vinyl banners for indoor and outdoor use.', image: 'https://images.pexels.com/photos/6325997/pexels-photo-6325997.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { icon: Maximize, title: 'Roll-up Standees', desc: 'Portable and durable pull-up banners for events and exhibitions.', image: 'https://images.pexels.com/photos/17698575/pexels-photo-17698575.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { icon: Tag, title: 'Stickers & Labels', desc: 'Die-cut stickers, product labels, and holographic seals.', image: 'https://images.pexels.com/photos/4166649/pexels-photo-4166649.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { icon: Stamp, title: 'Rubber Stamps & Self-Inking Stamps', desc: 'Custom stamps for official and corporate use.', image: 'https://images.pexels.com/photos/1351296/pexels-photo-1351296.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { icon: Layers, title: 'Corporate Stationery', desc: 'Complete stationery suites including notepads, ID cards, and lanyards.', image: 'https://images.pexels.com/photos/6157052/pexels-photo-6157052.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { icon: Package, title: 'Custom Packaging', desc: 'Branded boxes, bags, and packaging solutions tailored to your products.', image: 'https://images.pexels.com/photos/1666067/pexels-photo-1666067.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { icon: PenTool, title: 'Logo Design', desc: 'Professional logo design to establish a strong brand identity.', image: 'https://images.pexels.com/photos/1337380/pexels-photo-1337380.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { icon: Palette, title: 'Graphic Design', desc: 'Full creative design services from concept to print-ready artwork.', image: 'https://images.pexels.com/photos/1111369/pexels-photo-1111369.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { icon: Share2, title: 'Social Media Designs', desc: 'Engaging digital creatives for your social media campaigns.', image: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { icon: MessageSquare, title: 'Printing Consultation', desc: 'Expert advice on materials, finishes, and cost-effective solutions.', image: 'https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=600' },
+  {
+    icon: CreditCard,
+    title: 'Business Cards',
+    desc: 'Premium quality cards with matte, gloss, spot UV, and raised print finishes.',
+    image: 'https://images.pexels.com/photos/6476808/pexels-photo-6476808.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    icon: Heart,
+    title: 'Wedding & Invitation Cards',
+    desc: 'Beautifully crafted custom invitations for your special day.',
+    image: 'https://images.pexels.com/photos/1266810/pexels-photo-1266810.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    icon: Mail,
+    title: 'Letterheads & Envelopes',
+    desc: 'Professional branded stationery for your corporate communications.',
+    image: 'https://images.pexels.com/photos/4238481/pexels-photo-4238481.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    icon: FileText,
+    title: 'Flyers/Brochures/Catalogues',
+    desc: 'High-impact marketing materials with stunning layouts and vivid colors.',
+    image: 'https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    icon: Image,
+    title: 'Posters & Banners',
+    desc: 'Eye-catching posters and vinyl banners for indoor and outdoor use.',
+    image: 'https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    icon: Maximize,
+    title: 'Roll-up Standees',
+    desc: 'Portable and durable pull-up banners for events and exhibitions.',
+    image: '/rollup-standee.png',
+  },
+  {
+    icon: Tag,
+    title: 'Stickers & Labels',
+    desc: 'Die-cut stickers, product labels, and holographic seals.',
+    image: 'https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    icon: Stamp,
+    title: 'Rubber Stamps & Self-Inking Stamps',
+    desc: 'Custom stamps for official and corporate use.',
+    image: 'https://images.pexels.com/photos/6169659/pexels-photo-6169659.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    icon: Layers,
+    title: 'Corporate Stationery',
+    desc: 'Complete stationery suites including notepads, ID cards, and lanyards.',
+    image: 'https://images.pexels.com/photos/7191981/pexels-photo-7191981.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    icon: Package,
+    title: 'Custom Packaging',
+    desc: 'Branded boxes, bags, and packaging solutions tailored to your products.',
+    image: 'https://images.pexels.com/photos/4226218/pexels-photo-4226218.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    icon: PenTool,
+    title: 'Logo Design',
+    desc: 'Professional logo design to establish a strong brand identity.',
+    image: 'https://images.pexels.com/photos/3584999/pexels-photo-3584999.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    icon: Palette,
+    title: 'Graphic Design',
+    desc: 'Full creative design services from concept to print-ready artwork.',
+    image: 'https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    icon: Share2,
+    title: 'Social Media Designs',
+    desc: 'Engaging digital creatives for your social media campaigns.',
+    image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    icon: MessageSquare,
+    title: 'Printing Consultation',
+    desc: 'Expert advice on materials, finishes, and cost-effective solutions.',
+    image: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
 ];
 
 const cardVariants = {
@@ -81,7 +151,7 @@ export default function Services({ limit, isHome = false }: { limit?: number; is
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-slate-600 text-lg max-w-2xl mx-auto font-body"
           >
-            A comprehensive suite of premium printing and branding services — 
+            A comprehensive suite of premium printing and branding services —
             everything your business needs under one roof.
           </motion.p>
         </div>

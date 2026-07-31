@@ -79,7 +79,7 @@ export default function WhyChooseUs() {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-white/65 text-lg max-w-2xl mx-auto font-body"
+            className="text-white/90 text-lg max-w-2xl mx-auto font-body"
           >
             Six reasons why hundreds of businesses across Pakistan trust MAG Traders 
             as their go-to printing and branding partner.
