@@ -27,20 +27,34 @@ export default function Navbar() {
         className="sticky top-0 left-0 right-0 z-50 bg-[#0C1B3A] py-2.5 shadow-lg shadow-black/10 transition-all duration-300"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-         {/* Logo */}
+          
+          {/* 1. Logo Section (Desktop & Mobile Header) */}
+          {/* Logo */}
 <Link
   href="/"
   onClick={() => setMobileOpen(false)}
-  className="flex items-center flex-shrink-0 transition-opacity hover:opacity-90"
+  className="flex items-center gap-3 flex-shrink-0 z-50 transition-opacity hover:opacity-90"
 >
-  <Image
-    src="/logo.png"
-    alt="MAG Traders Logo"
-    width={200}  // Adjust this based on your logo's aspect ratio
-    height={64}  // Adjust this to match your header height
-    priority
-    className="h-16 w-auto object-contain" 
-  />
+  {/* The Icon/Image */}
+  <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0">
+    <Image
+      src="/logo.png"
+      alt="MAG Traders Logo"
+      fill
+      priority
+      className="object-contain" 
+    />
+  </div>
+
+  {/* The Stylized Text - Explicitly added here */}
+  <div className="flex flex-col justify-center leading-[0.8] select-none">
+    <span className="text-2xl md:text-3xl font-serif font-bold text-white tracking-tight">
+      MAG
+    </span>
+    <span className="text-[10px] md:text-[11px] font-sans font-black text-[#C9A84C] tracking-[0.35em] uppercase mt-1">
+      Traders
+    </span>
+  </div>
 </Link>
 
           {/* Desktop nav */}
@@ -108,22 +122,24 @@ export default function Navbar() {
               transition={{ duration: 0.35, ease: [0.32, 0.72, 0, 1] }}
               className="fixed top-0 right-0 bottom-0 z-50 w-[280px] bg-[#0C1B3A] flex flex-col shadow-2xl"
             >
-              {/* Drawer header */}
-              <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
-                <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-lg gold-gradient flex items-center justify-center">
-                    <Printer className="w-4 h-4 text-[#0C1B3A]" />
-                  </div>
-                  <span className="font-display font-bold text-white">MAG Traders</span>
-                </Link>
-                <button
-                  onClick={() => setMobileOpen(false)}
-                  className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
-                  aria-label="Close menu"
-                >
-                  <X className="w-4 h-4" />
-                </button>
-              </div>
+             {/* Drawer header */}
+      <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
+  <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3">
+    <div className="relative w-10 h-10">
+      <Image src="/logo.png" alt="Logo" fill className="object-contain" />
+    </div>
+    <div className="flex flex-col leading-[0.8]">
+      <span className="text-xl font-serif font-bold text-white">MAG</span>
+      <span className="text-[9px] font-sans font-bold text-[#C9A84C] tracking-[0.2em] uppercase">Traders</span>
+    </div>
+  </Link>
+  <button
+    onClick={() => setMobileOpen(false)}
+    className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white"
+  >
+    <X className="w-4 h-4" />
+  </button>
+</div>
 
               {/* Nav links */}
               <nav className="flex-1 overflow-y-auto px-4 py-6 space-y-1">

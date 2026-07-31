@@ -37,20 +37,33 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-flex items-center mb-3 ml-1 sm:ml-2">
+            <Link href="/" className="inline-flex items-center gap-3 mb-6 group">
+              {/* Logo Image */}
               <Image
                 src="/logo.png"
                 alt="MAG Traders Logo"
-                width={64}
-                height={64}
+                width={56}
+                height={56}
                 className="object-contain"
                 style={{ mixBlendMode: 'screen' }}
               />
+              
+              {/* Logo Text Styled to match image */}
+              <div className="flex flex-col justify-center">
+                <span className="text-white text-3xl font-serif font-bold leading-none tracking-tight">
+                  MAG
+                </span>
+                <span className="text-[#C9A84C] text-[11px] font-sans font-bold tracking-[0.25em] uppercase leading-none mt-1">
+                  Traders
+                </span>
+              </div>
             </Link>
+
             <p className="text-white/55 text-sm leading-relaxed font-body mb-6">
               Pakistan's trusted partner for premium printing, branding, and creative design solutions. 
               Your vision, printed perfectly.
             </p>
+            
             {/* Contact snippets */}
             <div className="space-y-3">
               <a href="tel:+923215851936" className="flex items-center gap-2.5 text-sm text-white/70 hover:text-[#C9A84C] transition-colors font-body group">

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link'; // Added missing import
 
 interface PageHeaderProps {
   title: string;
@@ -31,23 +32,35 @@ export default function PageHeader({
 
       <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
-        {/* 2. Logo Container */}
-        {/* Logo */}
-<motion.div
-  initial={{ opacity: 0, scale: 0.8 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.8 }}
-  className="flex justify-center mb-10" // Increased bottom margin slightly
->
-  <Image
-    src="/logo.png"
-    alt="Company Logo"
-    width={280}   // Increased from 180 to 280
-    height={280}  // Increased from 180 to 280
-    priority
-    className="object-contain w-auto h-32 md:h-40 lg:h-48" // Explicit responsive heights
-  />
-</motion.div>
+        {/* 2. Logo Container - Fixed structure */}
+        <Link href="/" className="inline-flex items-center justify-center mb-10 group">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex items-center gap-4" // This keeps image and text side-by-side
+          >
+            {/* The Logo Image */}
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={150}
+              height={150}
+              priority
+              className="w-14 h-14 md:w-20 md:h-20 object-contain"
+            />
+
+            {/* The Text Block - Styled to match your image */}
+            <div className="flex flex-col items-start leading-[0.9]">
+              <span className="text-3xl md:text-5xl font-serif font-bold text-white tracking-tight">
+                MAG
+              </span>
+              <span className="text-[10px] md:text-[13px] font-sans font-extrabold text-[#C9A84C] tracking-[0.4em] uppercase mt-1">
+                Traders
+              </span>
+            </div>
+          </motion.div>
+        </Link>
 
         {/* 3. Title */}
         <motion.h1
