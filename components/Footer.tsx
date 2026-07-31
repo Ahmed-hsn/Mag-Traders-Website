@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { Printer, Phone, Mail, MapPin, Clock, ArrowUp, Globe } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, ArrowUp } from 'lucide-react';
+import Image from 'next/image';
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -36,14 +37,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2.5 mb-5 inline-flex">
-              <div className="w-9 h-9 rounded-lg gold-gradient flex items-center justify-center shadow-md">
-                <Printer className="w-5 h-5 text-[#0C1B3A]" />
-              </div>
-              <div className="leading-none">
-                <span className="block font-display font-bold text-white text-lg tracking-wide">MAG</span>
-                <span className="block font-body text-[10px] font-medium tracking-[0.25em] text-[#C9A84C] uppercase">Traders</span>
-              </div>
+            <Link href="/" className="inline-flex items-center mb-3">
+              <Image
+                src="/mag-logo.png"
+                alt="MAG Traders Logo"
+                width={64}
+                height={64}
+                className="object-contain"
+                style={{ mixBlendMode: 'screen' }}
+              />
             </Link>
             <p className="text-white/55 text-sm leading-relaxed font-body mb-6">
               Pakistan's trusted partner for premium printing, branding, and creative design solutions. 
@@ -51,21 +53,21 @@ export default function Footer() {
             </p>
             {/* Contact snippets */}
             <div className="space-y-3">
-              <a href="tel:+92XXXXXXXXXX" className="flex items-center gap-2.5 text-sm text-white/70 hover:text-[#C9A84C] transition-colors font-body group">
+              <a href="tel:+923215851936" className="flex items-center gap-2.5 text-sm text-white/70 hover:text-[#C9A84C] transition-colors font-body group">
                 <Phone className="w-4 h-4 text-[#C9A84C] group-hover:scale-110 transition-transform" />
-                +92 XXX XXX XXXX
+                +92 321 5851936
               </a>
-              <a href="mailto:info@magtraders.pk" className="flex items-center gap-2.5 text-sm text-white/70 hover:text-[#C9A84C] transition-colors font-body group">
+              <a href="mailto:Info@magtraders.pk" className="flex items-center gap-2.5 text-sm text-white/70 hover:text-[#C9A84C] transition-colors font-body group">
                 <Mail className="w-4 h-4 text-[#C9A84C] group-hover:scale-110 transition-transform" />
-                info@magtraders.pk
+                Info@magtraders.pk
               </a>
-              <div className="flex items-center gap-2.5 text-sm text-white/70 font-body">
-                <Globe className="w-4 h-4 text-[#C9A84C] flex-shrink-0" />
-                magtraders.pk
-              </div>
-              <div className="flex items-center gap-2.5 text-sm text-white/70 font-body">
-                <MapPin className="w-4 h-4 text-[#C9A84C] flex-shrink-0" />
-                Pakistan — Nationwide Delivery
+              <a href="mailto:Info@magtraders.com" className="flex items-center gap-2.5 text-sm text-white/70 hover:text-[#C9A84C] transition-colors font-body group">
+                <Mail className="w-4 h-4 text-[#C9A84C] group-hover:scale-110 transition-transform" />
+                Info@magtraders.com
+              </a>
+              <div className="flex items-start gap-2.5 text-sm text-white/70 font-body">
+                <MapPin className="w-4 h-4 text-[#C9A84C] flex-shrink-0 mt-0.5" />
+                <span>Basement Shop #5, Taj Mahal Plaza, 6th Road Chowk, Rawalpindi</span>
               </div>
             </div>
           </div>

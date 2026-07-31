@@ -53,11 +53,10 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative px-3.5 py-2 text-sm font-medium rounded-full transition-all duration-300 font-body ${
-                    isActive
+                  className={`relative px-3.5 py-2 text-sm font-medium rounded-full transition-all duration-300 font-body ${isActive
                       ? 'text-[#C9A84C] bg-white/10'
                       : 'text-white hover:text-[#C9A84C] hover:bg-white/8'
-                  }`}
+                    }`}
                 >
                   {link.label}
                   {isActive && (
@@ -142,11 +141,10 @@ export default function Navbar() {
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: i * 0.05, duration: 0.3 }}
-                        className={`w-full flex items-center justify-between px-4 py-3 rounded-2xl text-sm font-medium transition-all duration-200 font-body ${
-                          isActive
+                        className={`w-full flex items-center justify-between px-4 py-3 rounded-2xl text-sm font-medium transition-all duration-200 font-body ${isActive
                             ? 'bg-[#C9A84C]/15 text-[#C9A84C] border border-[#C9A84C]/30'
                             : 'text-white/75 hover:text-white hover:bg-white/8'
-                        }`}
+                          }`}
                       >
                         {link.label}
                         <ChevronRight className={`w-3.5 h-3.5 transition-opacity ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-50'}`} />
