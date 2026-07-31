@@ -22,12 +22,12 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            'url(https://images.pexels.com/photos/1749303/pexels-photo-1749303.jpeg?auto=compress&cs=tinysrgb&h=1080&w=1920)',
+            'url(https://images.pexels.com/photos/4792733/pexels-photo-4792733.jpeg?auto=compress&cs=tinysrgb&h=1080&w=1920)',
         }}
         role="img"
         aria-label="Professional printing and design workspace"
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0C1B3A]/96 via-[#0C1B3A]/88 to-[#081428]/95" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0C1B3A]/[0.92] via-[#0C1B3A]/[0.85] to-[#081428]/[0.92]" />
 
       {/* Subtle pattern */}
       <div className="absolute inset-0 opacity-[0.04]"

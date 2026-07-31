@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 
 export default function TrustStrip() {
   return (
-    <section className="bg-[#081428] py-16 relative overflow-hidden">
+    <section className="bg-[#081428] py-10 relative overflow-hidden">
       {/* Subtle border top */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A84C]/30 to-transparent" />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
