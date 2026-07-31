@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -23,37 +24,34 @@ export default function Navbar() {
   return (
     <>
       <header
-        className="sticky top-0 left-0 right-0 z-50 bg-[#0C1B3A] py-3 shadow-lg shadow-black/10 transition-all duration-300"
+        className="sticky top-0 left-0 right-0 z-50 bg-[#0C1B3A] py-2.5 shadow-lg shadow-black/10 transition-all duration-300"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Logo */}
-          <Link
-            href="/"
-            onClick={() => setMobileOpen(false)}
-            className="flex items-center gap-2.5 group flex-shrink-0"
-          >
-            <div className="w-9 h-9 rounded-xl gold-gradient flex items-center justify-center shadow-md group-hover:shadow-[#C9A84C]/40 transition-shadow duration-300">
-              <Printer className="w-5 h-5 text-[#0C1B3A]" />
-            </div>
-            <div className="leading-none">
-              <span className="block font-display font-bold text-lg tracking-wide text-white transition-colors duration-400">
-                MAG
-              </span>
-              <span className="block font-body text-[10px] font-semibold tracking-[0.25em] text-[#C9A84C] uppercase">
-                Traders
-              </span>
-            </div>
-          </Link>
+         {/* Logo */}
+<Link
+  href="/"
+  onClick={() => setMobileOpen(false)}
+  className="flex items-center flex-shrink-0 transition-opacity hover:opacity-90"
+>
+  <Image
+    src="/logo.png"
+    alt="MAG Traders Logo"
+    width={200}  // Adjust this based on your logo's aspect ratio
+    height={64}  // Adjust this to match your header height
+    priority
+    className="h-16 w-auto object-contain" 
+  />
+</Link>
 
           {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-0.5">
+          <nav className="hidden lg:flex items-center gap-2.6">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative px-3.5 py-2 text-sm font-medium rounded-full transition-all duration-300 font-body ${isActive
+                  className={`relative px-5 py-2 text-sm font-medium rounded-full transition-all duration-300 font-body ${isActive
                       ? 'text-[#C9A84C] bg-white/10'
                       : 'text-white hover:text-[#C9A84C] hover:bg-white/8'
                     }`}

@@ -24,7 +24,7 @@ export default function Contact() {
     {
       icon: Phone,
       label: 'Phone / WhatsApp',
-      value: '+92 XXX XXX XXXX',
+      value: '+92 321 5851936',
       sub: 'Available Mon–Sat, 9:00 AM–6:00 PM',
     },
     {
@@ -32,12 +32,6 @@ export default function Contact() {
       label: 'Email',
       value: 'info@magtraders.pk',
       sub: 'We respond within 24 hours',
-    },
-    {
-      icon: Globe,
-      label: 'Website',
-      value: 'magtraders.pk',
-      sub: 'Visit us online',
     },
     {
       icon: Clock,

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 import Services from '@/components/Services';
+import image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Our Services | MAG Traders',

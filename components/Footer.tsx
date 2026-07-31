@@ -37,9 +37,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-flex items-center mb-3">
+            <Link href="/" className="inline-flex items-center mb-3 ml-1 sm:ml-2">
               <Image
-                src="/mag-logo.png"
+                src="/logo.png"
                 alt="MAG Traders Logo"
                 width={64}
                 height={64}
