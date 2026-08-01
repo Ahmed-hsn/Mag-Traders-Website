@@ -2,29 +2,55 @@
 
 import { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Globe } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 
 export default function Contact() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
+  
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setForm({ name: '', email: '', phone: '', message: '' });
+    setIsSubmitting(true);
+    setErrorMsg('');
+
+    try {
+      const response = await fetch('/contact.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
+
+      const data = await response.json();
+
+      if (data.status === 'success') {
+        setSubmitted(true);
+        setForm({ name: '', email: '', phone: '', message: '' });
+      } else {
+        setErrorMsg(data.message || 'Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      setErrorMsg('Failed to send message. Please check your connection.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactDetails = [
     {
       icon: Phone,
       label: 'Phone / WhatsApp',
-      value: '+92 321 5851936',
+      value: '+92 321 5851936',
       sub: 'Available Mon–Sat, 9:00 AM–6:00 PM',
     },
     {
@@ -80,7 +106,7 @@ export default function Contact() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="lg:col-span-2 space-y-5"
           >
-            <div className="navy-gradient rounded-2xl p-7 text-white mb-6">
+            <div className="navy-gradient rounded-2xl p-7 text-white mb-6 bg-[#0C1B3A]">
               <h3 className="font-display text-xl font-bold mb-1">MAG Traders</h3>
               <p className="text-white/60 text-sm font-body mb-6">
                 Premium Printing &amp; Branding Solutions
@@ -90,7 +116,7 @@ export default function Contact() {
                 {contactDetails.map((detail) => (
                   <div key={detail.label} className="flex items-start gap-3.5">
                     <div className="w-9 h-9 rounded-lg bg-[#C9A84C]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <detail.icon className="w-4.5 h-4.5 w-4 h-4 text-[#C9A84C]" />
+                      <detail.icon className="w-4 h-4 text-[#C9A84C]" />
                     </div>
                     <div>
                       <p className="text-xs text-white/50 font-body uppercase tracking-wider mb-0.5">{detail.label}</p>
@@ -121,7 +147,7 @@ export default function Contact() {
                       href="https://maps.google.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block mt-3 px-5 py-2 rounded-full text-xs font-semibold text-[#0C1B3A] gold-gradient hover:scale-105 transition-all duration-200 shadow-md font-body"
+                      className="inline-block mt-3 px-5 py-2 rounded-full text-xs font-semibold text-[#0C1B3A] bg-gradient-to-r from-[#C9A84C] to-[#E3C878] hover:scale-105 transition-all duration-200 shadow-md font-body"
                     >
                       View on Google Maps
                     </a>
@@ -169,6 +195,13 @@ export default function Contact() {
                   <p className="text-slate-500 text-sm font-body mb-7">
                     Fill in your details and we'll get back to you within 24 hours.
                   </p>
+
+                  {errorMsg && (
+                    <div className="mb-6 p-4 rounded-xl bg-red-50 border border-red-200 flex items-start gap-3">
+                      <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                      <p className="text-sm text-red-800 font-body">{errorMsg}</p>
+                    </div>
+                  )}
 
                   <form onSubmit={handleSubmit} className="space-y-5">
                     <div className="grid sm:grid-cols-2 gap-5">
@@ -233,10 +266,20 @@ export default function Contact() {
 
                     <button
                       type="submit"
-                      className="w-full flex items-center justify-center gap-2.5 py-4 rounded-full text-base font-semibold text-[#0C1B3A] gold-gradient hover:shadow-lg hover:shadow-[#C9A84C]/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 font-body"
+                      disabled={isSubmitting}
+                      className="w-full flex items-center justify-center gap-2.5 py-4 rounded-full text-base font-semibold text-[#0C1B3A] bg-gradient-to-r from-[#C9A84C] to-[#E3C878] hover:shadow-lg hover:shadow-[#C9A84C]/30 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:hover:scale-100 transition-all duration-300 font-body"
                     >
-                      <Send className="w-4 h-4" />
-                      Send Message
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 className="w-5 h-5 animate-spin" />
+                          Sending...
+                        </>
+                      ) : (
+                        <>
+                          <Send className="w-4 h-4" />
+                          Send Message
+                        </>
+                      )}
                     </button>
                   </form>
                 </>
