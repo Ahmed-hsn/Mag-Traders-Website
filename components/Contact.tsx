@@ -1,46 +1,62 @@
-'use client';
+"use client";
 
-import { useState, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { useState, useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Send,
+  CheckCircle,
+  AlertCircle,
+  Loader2,
+} from "lucide-react";
 
 export default function Contact() {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: '-80px' });
+  const inView = useInView(ref, { once: true, margin: "-80px" });
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [errorMsg, setErrorMsg] = useState('');
-  
-  const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
+  const [errorMsg, setErrorMsg] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setErrorMsg('');
+    setErrorMsg("");
 
     try {
-      const response = await fetch('/contact.php', {
-        method: 'POST',
+      const response = await fetch("/contact.php", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(form),
       });
 
       const data = await response.json();
 
-      if (data.status === 'success') {
+      if (data.status === "success") {
         setSubmitted(true);
-        setForm({ name: '', email: '', phone: '', message: '' });
+        setForm({ name: "", email: "", phone: "", message: "" });
       } else {
-        setErrorMsg(data.message || 'Something went wrong. Please try again.');
+        setErrorMsg(data.message || "Something went wrong. Please try again.");
       }
     } catch (error) {
-      setErrorMsg('Failed to send message. Please check your connection.');
+      setErrorMsg("Failed to send message. Please check your connection.");
     } finally {
       setIsSubmitting(false);
     }
@@ -49,21 +65,21 @@ export default function Contact() {
   const contactDetails = [
     {
       icon: Phone,
-      label: 'Phone / WhatsApp',
-      value: '+92 321 5851936',
-      sub: 'Available Mon–Sat, 9:00 AM–6:00 PM',
+      label: "Phone / WhatsApp",
+      value: "+92 321 5851936",
+      sub: "Available Mon–Thu & Sat–Sun, 9:00 AM–6:00 PM",
     },
     {
       icon: Mail,
-      label: 'Email',
-      value: 'info@magtraders.pk',
-      sub: 'We respond within 24 hours',
+      label: "Email",
+      value: "info@magtraders.pk",
+      sub: "We respond within 24 hours",
     },
     {
       icon: Clock,
-      label: 'Business Hours',
-      value: 'Monday–Saturday 9:00 AM–6:00 PM',
-      sub: 'Closed on Sundays & public holidays',
+      label: "Business Hours",
+      value: "Monday–Thursday, Saturday–Sunday 9:00 AM–6:00 PM",
+      sub: "Closed on Fridays only",
     },
   ];
 
@@ -94,7 +110,8 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-slate-600 text-lg max-w-2xl mx-auto font-body"
           >
-            Ready to bring your brand to life? Get in touch for a free quote or to discuss your project.
+            Ready to bring your brand to life? Get in touch for a free quote or
+            to discuss your project.
           </motion.p>
         </div>
 
@@ -107,7 +124,9 @@ export default function Contact() {
             className="lg:col-span-2 space-y-5"
           >
             <div className="navy-gradient rounded-2xl p-7 text-white mb-6 bg-[#0C1B3A]">
-              <h3 className="font-display text-xl font-bold mb-1">MAG Traders</h3>
+              <h3 className="font-display text-xl font-bold mb-1">
+                MAG Traders
+              </h3>
               <p className="text-white/60 text-sm font-body mb-6">
                 Premium Printing &amp; Branding Solutions
               </p>
@@ -119,9 +138,15 @@ export default function Contact() {
                       <detail.icon className="w-4 h-4 text-[#C9A84C]" />
                     </div>
                     <div>
-                      <p className="text-xs text-white/50 font-body uppercase tracking-wider mb-0.5">{detail.label}</p>
-                      <p className="text-white font-semibold font-body text-sm">{detail.value}</p>
-                      <p className="text-white/50 text-xs font-body">{detail.sub}</p>
+                      <p className="text-xs text-white/50 font-body uppercase tracking-wider mb-0.5">
+                        {detail.label}
+                      </p>
+                      <p className="text-white font-semibold font-body text-sm">
+                        {detail.value}
+                      </p>
+                      <p className="text-white/50 text-xs font-body">
+                        {detail.sub}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -134,7 +159,7 @@ export default function Contact() {
                 className="w-full h-52 bg-cover bg-center relative"
                 style={{
                   backgroundImage:
-                    'url(https://images.pexels.com/photos/38748839/pexels-photo-38748839.jpeg?auto=compress&cs=tinysrgb&h=400&w=600)',
+                    "url(https://images.pexels.com/photos/38748839/pexels-photo-38748839.jpeg?auto=compress&cs=tinysrgb&h=400&w=600)",
                 }}
                 aria-label="MAG Traders location map placeholder"
               >
@@ -178,7 +203,8 @@ export default function Contact() {
                     Message Sent!
                   </h3>
                   <p className="text-slate-600 font-body text-sm max-w-xs">
-                    Thank you for reaching out. Our team will get back to you within 24 hours.
+                    Thank you for reaching out. Our team will get back to you
+                    within 24 hours.
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
@@ -193,13 +219,16 @@ export default function Contact() {
                     Request a Free Quote
                   </h3>
                   <p className="text-slate-500 text-sm font-body mb-7">
-                    Fill in your details and we'll get back to you within 24 hours.
+                    Fill in your details and we'll get back to you within 24
+                    hours.
                   </p>
 
                   {errorMsg && (
                     <div className="mb-6 p-4 rounded-xl bg-red-50 border border-red-200 flex items-start gap-3">
                       <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                      <p className="text-sm text-red-800 font-body">{errorMsg}</p>
+                      <p className="text-sm text-red-800 font-body">
+                        {errorMsg}
+                      </p>
                     </div>
                   )}
 
