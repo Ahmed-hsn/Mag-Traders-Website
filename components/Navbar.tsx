@@ -38,7 +38,7 @@ export default function Navbar() {
   {/* The Icon/Image */}
   <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0">
     <Image
-      src="/logo.png"
+      src="/logo-new.png"
       alt="MAG Traders Logo"
       fill
       priority
@@ -126,7 +126,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
   <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3">
     <div className="relative w-10 h-10">
-      <Image src="/logo.png" alt="Logo" fill className="object-contain" />
+      <Image src="/logo-new.png" alt="Logo" fill className="object-contain" />
     </div>
     <div className="flex flex-col leading-[0.8]">
       <span className="text-xl font-serif font-bold text-white">MAG</span>

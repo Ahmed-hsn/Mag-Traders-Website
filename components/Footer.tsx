@@ -38,9 +38,8 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-flex items-center gap-3 mb-6 group">
-              {/* Logo Image */}
               <Image
-                src="/logo.png"
+                src="/logo-new.png"
                 alt="MAG Traders Logo"
                 width={56}
                 height={56}
