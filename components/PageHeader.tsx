@@ -42,7 +42,7 @@ export default function PageHeader({
           >
             {/* The Logo Image */}
             <Image
-              src="/logo.png"
+              src="/logo-new.png"
               alt="Logo"
               width={150}
               height={150}
