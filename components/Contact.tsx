@@ -92,7 +92,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="inline-block px-4 py-1 rounded-full bg-[#C9A84C]/10 text-[#C9A84C] text-xs font-semibold tracking-widest uppercase font-body mb-4 border border-[#C9A84C]/20"
+            className="inline-block px-4 py-1 rounded-full bg-[#F47920]/10 text-[#F47920] text-xs font-semibold tracking-widest uppercase font-body mb-4 border border-[#F47920]/20"
           >
             Get in Touch
           </motion.span>
@@ -100,9 +100,9 @@ export default function Contact() {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-3xl md:text-5xl font-bold text-[#0C1B3A] mb-4"
+            className="font-display text-3xl md:text-5xl font-bold text-[#1B4DB7] mb-4"
           >
-            Contact <span className="text-[#C9A84C]">MAG Traders</span>
+            Contact <span className="text-[#F47920]">MAG Traders (Pvt.) Ltd.</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -123,9 +123,9 @@ export default function Contact() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="lg:col-span-2 space-y-5"
           >
-            <div className="navy-gradient rounded-2xl p-7 text-white mb-6 bg-[#0C1B3A]">
+            <div className="blue-gradient rounded-2xl p-7 text-white mb-6 bg-[#1B4DB7]">
               <h3 className="font-display text-xl font-bold mb-1">
-                MAG Traders
+                MAG Traders (Pvt.) Ltd.
               </h3>
               <p className="text-white/60 text-sm font-body mb-6">
                 Premium Printing &amp; Branding Solutions
@@ -134,8 +134,8 @@ export default function Contact() {
               <div className="space-y-5">
                 {contactDetails.map((detail) => (
                   <div key={detail.label} className="flex items-start gap-3.5">
-                    <div className="w-9 h-9 rounded-lg bg-[#C9A84C]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <detail.icon className="w-4 h-4 text-[#C9A84C]" />
+                    <div className="w-9 h-9 rounded-lg bg-[#F47920]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <detail.icon className="w-4 h-4 text-[#F47920]" />
                     </div>
                     <div>
                       <p className="text-xs text-white/50 font-body uppercase tracking-wider mb-0.5">
@@ -161,18 +161,18 @@ export default function Contact() {
                   backgroundImage:
                     "url(https://images.pexels.com/photos/38748839/pexels-photo-38748839.jpeg?auto=compress&cs=tinysrgb&h=400&w=600)",
                 }}
-                aria-label="MAG Traders location map placeholder"
+                aria-label="MAG Traders (Pvt.) Ltd. location map placeholder"
               >
-                <div className="absolute inset-0 bg-[#0C1B3A]/60 flex items-center justify-center">
+                <div className="absolute inset-0 bg-[#1B4DB7]/60 flex items-center justify-center">
                   <div className="text-center text-white">
-                    <MapPin className="w-8 h-8 text-[#C9A84C] mx-auto mb-2" />
-                    <p className="font-body text-sm font-medium">MAG Traders</p>
+                    <MapPin className="w-8 h-8 text-[#F47920] mx-auto mb-2" />
+                    <p className="font-body text-sm font-medium">MAG Traders (Pvt.) Ltd.</p>
                     <p className="font-body text-xs text-white/70">Pakistan</p>
                     <a
                       href="https://maps.google.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block mt-3 px-5 py-2 rounded-full text-xs font-semibold text-[#0C1B3A] bg-gradient-to-r from-[#C9A84C] to-[#E3C878] hover:scale-105 transition-all duration-200 shadow-md font-body"
+                      className="inline-block mt-3 px-5 py-2 rounded-full text-xs font-semibold text-[#1B4DB7] bg-gradient-to-r from-[#F47920] to-[#E3C878] hover:scale-105 transition-all duration-200 shadow-md font-body"
                     >
                       View on Google Maps
                     </a>
@@ -199,7 +199,7 @@ export default function Contact() {
                   <div className="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center mb-5">
                     <CheckCircle className="w-8 h-8 text-emerald-600" />
                   </div>
-                  <h3 className="font-display text-2xl font-bold text-[#0C1B3A] mb-2">
+                  <h3 className="font-display text-2xl font-bold text-[#1B4DB7] mb-2">
                     Message Sent!
                   </h3>
                   <p className="text-slate-600 font-body text-sm max-w-xs">
@@ -208,14 +208,14 @@ export default function Contact() {
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
-                    className="mt-6 px-7 py-3 rounded-full text-sm font-semibold text-white bg-[#0C1B3A] hover:bg-[#122247] hover:scale-[1.03] transition-all duration-200 font-body shadow-md"
+                    className="mt-6 px-7 py-3 rounded-full text-sm font-semibold text-white bg-[#1B4DB7] hover:bg-[#122247] hover:scale-[1.03] transition-all duration-200 font-body shadow-md"
                   >
                     Send Another Message
                   </button>
                 </motion.div>
               ) : (
                 <>
-                  <h3 className="font-display text-2xl font-bold text-[#0C1B3A] mb-1">
+                  <h3 className="font-display text-2xl font-bold text-[#1B4DB7] mb-1">
                     Request a Free Quote
                   </h3>
                   <p className="text-slate-500 text-sm font-body mb-7">
@@ -235,7 +235,7 @@ export default function Contact() {
                   <form onSubmit={handleSubmit} className="space-y-5">
                     <div className="grid sm:grid-cols-2 gap-5">
                       <div>
-                        <label className="block text-xs font-semibold text-[#0C1B3A] mb-1.5 font-body tracking-wide uppercase">
+                        <label className="block text-xs font-semibold text-[#1B4DB7] mb-1.5 font-body tracking-wide uppercase">
                           Full Name *
                         </label>
                         <input
@@ -245,11 +245,11 @@ export default function Contact() {
                           onChange={handleChange}
                           required
                           placeholder="Your name"
-                          className="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] text-sm text-slate-800 placeholder-slate-400 font-body focus:outline-none focus:border-[#C9A84C] focus:ring-2 focus:ring-[#C9A84C]/20 transition-all duration-200 bg-[#F8FAFC]"
+                          className="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] text-sm text-slate-800 placeholder-slate-400 font-body focus:outline-none focus:border-[#F47920] focus:ring-2 focus:ring-[#F47920]/20 transition-all duration-200 bg-[#F8FAFC]"
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-semibold text-[#0C1B3A] mb-1.5 font-body tracking-wide uppercase">
+                        <label className="block text-xs font-semibold text-[#1B4DB7] mb-1.5 font-body tracking-wide uppercase">
                           Email Address *
                         </label>
                         <input
@@ -259,13 +259,13 @@ export default function Contact() {
                           onChange={handleChange}
                           required
                           placeholder="your@email.com"
-                          className="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] text-sm text-slate-800 placeholder-slate-400 font-body focus:outline-none focus:border-[#C9A84C] focus:ring-2 focus:ring-[#C9A84C]/20 transition-all duration-200 bg-[#F8FAFC]"
+                          className="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] text-sm text-slate-800 placeholder-slate-400 font-body focus:outline-none focus:border-[#F47920] focus:ring-2 focus:ring-[#F47920]/20 transition-all duration-200 bg-[#F8FAFC]"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-[#0C1B3A] mb-1.5 font-body tracking-wide uppercase">
+                      <label className="block text-xs font-semibold text-[#1B4DB7] mb-1.5 font-body tracking-wide uppercase">
                         Phone Number
                       </label>
                       <input
@@ -274,12 +274,12 @@ export default function Contact() {
                         value={form.phone}
                         onChange={handleChange}
                         placeholder="+92 XXX XXX XXXX"
-                        className="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] text-sm text-slate-800 placeholder-slate-400 font-body focus:outline-none focus:border-[#C9A84C] focus:ring-2 focus:ring-[#C9A84C]/20 transition-all duration-200 bg-[#F8FAFC]"
+                        className="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] text-sm text-slate-800 placeholder-slate-400 font-body focus:outline-none focus:border-[#F47920] focus:ring-2 focus:ring-[#F47920]/20 transition-all duration-200 bg-[#F8FAFC]"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-[#0C1B3A] mb-1.5 font-body tracking-wide uppercase">
+                      <label className="block text-xs font-semibold text-[#1B4DB7] mb-1.5 font-body tracking-wide uppercase">
                         Your Message *
                       </label>
                       <textarea
@@ -289,14 +289,14 @@ export default function Contact() {
                         required
                         rows={5}
                         placeholder="Tell us about your project — what do you need, quantity, timeline, and any other details..."
-                        className="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] text-sm text-slate-800 placeholder-slate-400 font-body focus:outline-none focus:border-[#C9A84C] focus:ring-2 focus:ring-[#C9A84C]/20 transition-all duration-200 bg-[#F8FAFC] resize-none"
+                        className="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] text-sm text-slate-800 placeholder-slate-400 font-body focus:outline-none focus:border-[#F47920] focus:ring-2 focus:ring-[#F47920]/20 transition-all duration-200 bg-[#F8FAFC] resize-none"
                       />
                     </div>
 
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full flex items-center justify-center gap-2.5 py-4 rounded-full text-base font-semibold text-[#0C1B3A] bg-gradient-to-r from-[#C9A84C] to-[#E3C878] hover:shadow-lg hover:shadow-[#C9A84C]/30 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:hover:scale-100 transition-all duration-300 font-body"
+                      className="w-full flex items-center justify-center gap-2.5 py-4 rounded-full text-base font-semibold text-[#1B4DB7] bg-gradient-to-r from-[#F47920] to-[#E3C878] hover:shadow-lg hover:shadow-[#F47920]/30 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:hover:scale-100 transition-all duration-300 font-body"
                     >
                       {isSubmitting ? (
                         <>

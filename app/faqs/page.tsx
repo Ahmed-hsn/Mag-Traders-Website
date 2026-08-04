@@ -3,7 +3,7 @@ import PageHeader from '@/components/PageHeader';
 import FAQs from '@/components/FAQs';
 
 export const metadata: Metadata = {
-  title: 'FAQs | MAG Traders',
+  title: 'FAQs | MAG Traders (Pvt.) Ltd.',
   description: 'Frequently asked questions about our premium printing services, turnaround times, and order process.',
 };
 

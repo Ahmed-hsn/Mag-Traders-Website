@@ -3,7 +3,7 @@ import PageHeader from '@/components/PageHeader';
 import HowItWorks from '@/components/HowItWorks';
 
 export const metadata: Metadata = {
-  title: 'How It Works | MAG Traders',
+  title: 'How It Works | MAG Traders (Pvt.) Ltd.',
   description: 'Our simple 6-step process from requesting a quote to the final delivery of your premium printed products.',
 };
 

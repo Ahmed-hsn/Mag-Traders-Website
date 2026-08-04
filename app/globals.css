@@ -5,11 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap');
 
 :root {
-  --navy: #0C1B3A;
-  --navy-light: #122247;
-  --gold: #C9A84C;
-  --gold-light: #E8C96B;
-  --gold-pale: #F5E9C8;
+  --blue: #1B4DB7;
+  --blue-light: #122247;
+  --orange: #F47920;
+  --orange-light: #E8C96B;
+  --orange-pale: #F5E9C8;
   --blue-accent: #1A6DCC;
   --slate: #1E293B;
   --slate-mid: #334155;
@@ -67,29 +67,29 @@
   .font-body {
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
-  .text-navy {
-    color: var(--navy);
+  .text-blue {
+    color: var(--blue);
   }
-  .bg-navy {
-    background-color: var(--navy);
+  .bg-blue {
+    background-color: var(--blue);
   }
-  .bg-navy-light {
-    background-color: var(--navy-light);
+  .bg-blue-light {
+    background-color: var(--blue-light);
   }
-  .text-gold {
-    color: var(--gold);
+  .text-orange {
+    color: var(--orange);
   }
-  .bg-gold {
-    background-color: var(--gold);
+  .bg-orange {
+    background-color: var(--orange);
   }
-  .border-gold {
-    border-color: var(--gold);
+  .border-orange {
+    border-color: var(--orange);
   }
-  .gold-gradient {
-    background: linear-gradient(135deg, #C9A84C 0%, #E8C96B 50%, #C9A84C 100%);
+  .orange-gradient {
+    background: linear-gradient(135deg, #F47920 0%, #E8C96B 50%, #F47920 100%);
   }
-  .navy-gradient {
-    background: linear-gradient(135deg, #0C1B3A 0%, #1a3065 100%);
+  .blue-gradient {
+    background: linear-gradient(135deg, #1B4DB7 0%, #1a3065 100%);
   }
   .section-padding {
     @apply py-20 md:py-28;
@@ -107,7 +107,7 @@
   background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--gold);
+  background: var(--orange);
   border-radius: 3px;
 }
 

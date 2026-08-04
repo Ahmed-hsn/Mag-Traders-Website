@@ -33,18 +33,18 @@ export default function About() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="https://images.pexels.com/photos/7675023/pexels-photo-7675023.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                alt="MAG Traders graphic design and branding professionals at work"
+                alt="MAG Traders (Pvt.) Ltd. graphic design and branding professionals at work"
                 className="w-full h-[420px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0C1B3A]/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1B4DB7]/60 to-transparent" />
               {/* Floating card */}
               <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg gold-gradient flex items-center justify-center flex-shrink-0">
-                    <Award className="w-5 h-5 text-[#0C1B3A]" />
+                  <div className="w-10 h-10 rounded-lg orange-gradient flex items-center justify-center flex-shrink-0">
+                    <Award className="w-5 h-5 text-[#1B4DB7]" />
                   </div>
                   <div>
-                    <p className="font-semibold text-[#0C1B3A] text-sm font-body">Premium Quality Guaranteed</p>
+                    <p className="font-semibold text-[#1B4DB7] text-sm font-body">Premium Quality Guaranteed</p>
                     <p className="text-xs text-slate-500 font-body">Every print, every time — excellence delivered</p>
                   </div>
                 </div>
@@ -52,8 +52,8 @@ export default function About() {
             </div>
 
             {/* Decorative element */}
-            <div className="absolute -bottom-6 -right-6 w-40 h-40 rounded-2xl bg-[#C9A84C]/10 -z-10" />
-            <div className="absolute -top-6 -left-6 w-24 h-24 rounded-full bg-[#0C1B3A]/5 -z-10" />
+            <div className="absolute -bottom-6 -right-6 w-40 h-40 rounded-2xl bg-[#F47920]/10 -z-10" />
+            <div className="absolute -top-6 -left-6 w-24 h-24 rounded-full bg-[#1B4DB7]/5 -z-10" />
           </motion.div>
 
           {/* Text content */}
@@ -64,14 +64,23 @@ export default function About() {
             className="space-y-8"
           >
             <motion.div variants={fadeUp}>
-              <span className="inline-block px-4 py-1 rounded-full bg-[#C9A84C]/10 text-[#C9A84C] text-xs font-semibold tracking-widest uppercase font-body mb-4">
+              <span className="inline-block px-4 py-1 rounded-full bg-[#F47920]/10 text-[#F47920] text-xs font-semibold tracking-widest uppercase font-body mb-4">
                 Who We Are
               </span>
-              <h2 className="font-display text-3xl md:text-5xl font-bold text-[#0C1B3A] leading-tight mb-6">
-                About <span className="text-[#C9A84C]">MAG Traders</span>
+              <h2 className="font-display text-3xl md:text-5xl font-bold text-[#1B4DB7] leading-tight mb-6">
+                About <span className="text-[#F47920]">MAG Traders (Pvt.) Ltd.</span>
               </h2>
               <p className="text-slate-600 leading-relaxed font-body text-lg">
-                MAG Traders provides reliable printing services including business cards, wedding cards, office stationery, stamps, marketing materials, packaging, and custom branding. We are committed to delivering excellence through innovative design, premium materials, and on-time delivery.
+                Our mission is to provide reliable, innovative, and high-quality printing and advertising solutions that help businesses strengthen their brand identity and achieve their marketing goals.
+              </p>
+            </motion.div>
+
+            <motion.div variants={fadeUp}>
+              <h2 className="font-display text-3xl md:text-5xl font-bold text-[#1B4DB7] leading-tight mb-6 mt-12">
+                Our <span className="text-[#F47920]">Vision</span>
+              </h2>
+              <p className="text-slate-600 leading-relaxed font-body text-lg">
+                To become one of Pakistan's leading printing and advertising companies by delivering exceptional quality, outstanding customer service, and innovative branding solutions.
               </p>
             </motion.div>
 
@@ -85,11 +94,11 @@ export default function About() {
                   key={item.title}
                   className="flex items-start gap-3 p-4 rounded-xl bg-white border border-[#E2E8F0] shadow-sm"
                 >
-                  <div className="w-9 h-9 rounded-lg bg-[#0C1B3A] flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-4 h-4 text-[#C9A84C]" />
+                  <div className="w-9 h-9 rounded-lg bg-[#1B4DB7] flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-4 h-4 text-[#F47920]" />
                   </div>
                   <div>
-                    <p className="font-semibold text-[#0C1B3A] text-sm font-body">{item.title}</p>
+                    <p className="font-semibold text-[#1B4DB7] text-sm font-body">{item.title}</p>
                     <p className="text-xs text-slate-500 font-body">{item.desc}</p>
                   </div>
                 </div>

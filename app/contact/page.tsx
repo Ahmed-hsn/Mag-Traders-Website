@@ -3,8 +3,8 @@ import PageHeader from '@/components/PageHeader';
 import Contact from '@/components/Contact';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | MAG Traders',
-  description: 'Get in touch with MAG Traders for your printing and branding needs. Request a quote or ask us a question today.',
+  title: 'Contact Us | MAG Traders (Pvt.) Ltd.',
+  description: 'Get in touch with MAG Traders (Pvt.) Ltd. for your printing and branding needs. Request a quote or ask us a question today.',
 };
 
 export default function ContactPage() {

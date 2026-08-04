@@ -14,24 +14,24 @@ export default function PageHeader({
   subtitle,
 }: PageHeaderProps) {
   return (
-    <section className="relative py-20 lg:py-28 flex flex-col items-center justify-center overflow-hidden bg-[#0C1B3A]">
+    <section className="relative py-20 lg:py-28 flex flex-col items-center justify-center overflow-hidden bg-[#1B4DB7]">
       {/* 1. Background Layers */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#081428] to-[#0C1B3A] -z-10" />
-      
+      <div className="absolute inset-0 bg-gradient-to-b from-[#081428] to-[#1B4DB7] -z-10" />
+
       {/* Pattern */}
       <div
         className="absolute inset-0 opacity-[0.05] -z-10"
         style={{
-          backgroundImage: 'radial-gradient(circle at 1px 1px, #C9A84C 1px, transparent 0)',
+          backgroundImage: 'radial-gradient(circle at 1px 1px, #F47920 1px, transparent 0)',
           backgroundSize: '32px 32px',
         }}
       />
 
       {/* Glow Effect */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-[#C9A84C]/10 blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-[#F47920]/10 blur-3xl pointer-events-none -z-10" />
 
       <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        
+
         {/* 2. Logo Container - Fixed structure */}
         <Link href="/" className="inline-flex items-center justify-center mb-10 group">
           <motion.div
@@ -55,7 +55,7 @@ export default function PageHeader({
               <span className="text-3xl md:text-5xl font-serif font-bold text-white tracking-tight">
                 MAG
               </span>
-              <span className="text-[10px] md:text-[13px] font-sans font-extrabold text-[#C9A84C] tracking-[0.4em] uppercase mt-1">
+              <span className="text-[10px] md:text-[13px] font-sans font-extrabold text-[#F47920] tracking-[0.4em] uppercase mt-1">
                 Traders
               </span>
             </div>
@@ -78,7 +78,7 @@ export default function PageHeader({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto font-body"
+            className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto font-serif font-light leading-relaxed"
           >
             {subtitle}
           </motion.p>

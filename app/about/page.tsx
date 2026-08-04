@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
-import About from '@/components/About';
+import AboutExtended from '@/components/AboutExtended';
 
 export const metadata: Metadata = {
-  title: 'About Us | MAG Traders',
-  description: 'Learn more about MAG Traders, your reliable partner for printing services, branding, and graphic design in Pakistan.',
+  title: 'About Us | MAG Traders (Pvt.) Ltd.',
+  description: 'Learn more about MAG Traders (Pvt.) Ltd., your reliable partner for printing services, branding, and graphic design in Pakistan.',
 };
 
 export default function AboutPage() {
@@ -12,9 +12,9 @@ export default function AboutPage() {
     <>
       <PageHeader 
         title="About Us" 
-        subtitle="Discover our story, mission, and commitment to excellence." 
+        subtitle="Discover our story, philosophy, and commitment to excellence." 
       />
-      <About />
+      <AboutExtended />
     </>
   );
 }

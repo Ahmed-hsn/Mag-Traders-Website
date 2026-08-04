@@ -51,7 +51,7 @@ export default function HowItWorks() {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="inline-block px-4 py-1 rounded-full bg-[#C9A84C]/10 text-[#C9A84C] text-xs font-semibold tracking-widest uppercase font-body mb-4 border border-[#C9A84C]/20"
+            className="inline-block px-4 py-1 rounded-full bg-[#F47920]/10 text-[#F47920] text-xs font-semibold tracking-widest uppercase font-body mb-4 border border-[#F47920]/20"
           >
             The Process
           </motion.span>
@@ -59,9 +59,9 @@ export default function HowItWorks() {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-3xl md:text-5xl font-bold text-[#0C1B3A] mb-4"
+            className="font-display text-3xl md:text-5xl font-bold text-[#1B4DB7] mb-4"
           >
-            How It <span className="text-[#C9A84C]">Works</span>
+            How It <span className="text-[#F47920]">Works</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -82,7 +82,7 @@ export default function HowItWorks() {
               initial={{ scaleX: 0 }}
               animate={inView ? { scaleX: 1 } : {}}
               transition={{ duration: 1.2, delay: 0.4, ease: 'easeOut' }}
-              className="h-full bg-gradient-to-r from-[#C9A84C] via-[#E8C96B] to-[#C9A84C] origin-left"
+              className="h-full bg-gradient-to-r from-[#F47920] via-[#E8C96B] to-[#F47920] origin-left"
             />
           </div>
 
@@ -97,17 +97,17 @@ export default function HowItWorks() {
               >
                 {/* Step circle */}
                 <div className="relative mb-6">
-                  <div className="w-28 h-28 rounded-2xl bg-white border-2 border-[#E2E8F0] shadow-md flex flex-col items-center justify-center group hover:border-[#C9A84C] hover:shadow-lg transition-all duration-300">
-                    <div className="w-10 h-10 rounded-lg bg-[#0C1B3A] flex items-center justify-center mb-1.5">
-                      <step.icon className="w-5 h-5 text-[#C9A84C]" />
+                  <div className="w-28 h-28 rounded-2xl bg-white border-2 border-[#E2E8F0] shadow-md flex flex-col items-center justify-center group hover:border-[#F47920] hover:shadow-lg transition-all duration-300">
+                    <div className="w-10 h-10 rounded-lg bg-[#1B4DB7] flex items-center justify-center mb-1.5">
+                      <step.icon className="w-5 h-5 text-[#F47920]" />
                     </div>
-                    <span className="font-display text-2xl font-bold text-[#C9A84C]">
+                    <span className="font-display text-2xl font-bold text-[#F47920]">
                       {i + 1}
                     </span>
                   </div>
                 </div>
 
-                <h3 className="font-body font-bold text-[#0C1B3A] text-sm mb-2">{step.title}</h3>
+                <h3 className="font-body font-bold text-[#1B4DB7] text-sm mb-2">{step.title}</h3>
                 <p className="text-slate-500 text-xs leading-relaxed font-body">{step.desc}</p>
               </motion.div>
             ))}
@@ -126,20 +126,20 @@ export default function HowItWorks() {
             >
               {/* Left: number + line */}
               <div className="flex flex-col items-center flex-shrink-0">
-                <div className="w-12 h-12 rounded-xl bg-[#0C1B3A] flex items-center justify-center shadow-md z-10">
-                  <step.icon className="w-5 h-5 text-[#C9A84C]" />
+                <div className="w-12 h-12 rounded-xl bg-[#1B4DB7] flex items-center justify-center shadow-md z-10">
+                  <step.icon className="w-5 h-5 text-[#F47920]" />
                 </div>
                 {i < steps.length - 1 && (
-                  <div className="w-px flex-1 mt-2 bg-gradient-to-b from-[#C9A84C] to-[#E2E8F0]" />
+                  <div className="w-px flex-1 mt-2 bg-gradient-to-b from-[#F47920] to-[#E2E8F0]" />
                 )}
               </div>
 
               {/* Right: content */}
               <div className="pt-1.5 pb-4">
                 <div className="flex items-center gap-2 mb-1.5">
-                  <span className="text-xs font-semibold text-[#C9A84C] font-body">Step {i + 1}</span>
+                  <span className="text-xs font-semibold text-[#F47920] font-body">Step {i + 1}</span>
                 </div>
-                <h3 className="font-body font-bold text-[#0C1B3A] text-base mb-1.5">{step.title}</h3>
+                <h3 className="font-body font-bold text-[#1B4DB7] text-base mb-1.5">{step.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed font-body">{step.desc}</p>
               </div>
             </motion.div>

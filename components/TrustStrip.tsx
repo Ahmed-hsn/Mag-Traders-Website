@@ -6,7 +6,7 @@ export default function TrustStrip() {
   return (
     <section className="bg-[#081428] py-10 relative overflow-hidden">
       {/* Subtle border top */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A84C]/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#F47920]/30 to-transparent" />
       
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -28,7 +28,7 @@ export default function TrustStrip() {
               {i > 0 && (
                 <div className="md:hidden absolute top-0 left-1/2 -translate-x-1/2 w-16 h-px bg-white/10" />
               )}
-              <div className="font-display text-4xl sm:text-5xl font-bold text-[#C9A84C] mb-3">
+              <div className="font-display text-4xl sm:text-5xl font-bold text-[#F47920] mb-3">
                 {stat.value}
               </div>
               <div className="text-sm sm:text-base text-white/70 font-body tracking-[0.2em] uppercase">
