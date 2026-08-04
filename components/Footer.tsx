@@ -64,10 +64,9 @@ export default function Footer() {
               MAG Traders (Pvt.) Ltd. – Printing Excellence. Creative Branding. Trusted Solutions
             </p>
             <p className="text-slate-500 text-sm leading-relaxed font-body mb-6">
-              Pakistan's trusted partner for premium printing, branding, and
-              creative design solutions. Your vision, printed perfectly.
-            </p>
-
+  Pakistan&apos;s trusted partner for premium printing, branding, and
+  creative design solutions. Your vision, printed perfectly.
+</p>
             {/* Contact snippets */}
             <div className="space-y-3">
               <a
