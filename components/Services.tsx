@@ -18,8 +18,8 @@ const serviceCategories = [
     category: 'Printing Solutions',
     icon: Printer,
     items: [
-      { title: 'Offset Printing', desc: 'High-volume professional printing.', image: 'https://images.pexels.com/photos/1749301/pexels-photo-1749301.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Digital Printing', desc: 'Fast turnaround and short-run printing.', image: 'https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=600' },
+      { title: 'Offset Printing', desc: 'High-volume professional printing.', image: 'https://images.pexels.com/photos/29857196/pexels-photo-29857196.jpeg?auto=compress&cs=tinysrgb&w=600' },
+      { title: 'Digital Printing', desc: 'Fast turnaround and short-run printing.', image: 'https://images.unsplash.com/photo-1503694978374-8a2fa686963a?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
       { title: 'Flex Printing', desc: 'Durable large-format printing.', image: 'https://images.pexels.com/photos/7675023/pexels-photo-7675023.jpeg?auto=compress&cs=tinysrgb&w=600' },
       { title: 'Banner Printing', desc: 'Eye-catching custom banners.', image: 'https://images.pexels.com/photos/5727002/pexels-photo-5727002.jpeg?auto=compress&cs=tinysrgb&w=600' },
       { title: 'Vinyl Printing', desc: 'High-quality vinyl wraps and prints.', image: 'https://images.pexels.com/photos/20042071/pexels-photo-20042071.jpeg?auto=compress&cs=tinysrgb&w=600' },
@@ -28,32 +28,32 @@ const serviceCategories = [
       { title: 'Business Cards', desc: 'Premium custom business cards.', image: 'https://images.pexels.com/photos/8490097/pexels-photo-8490097.jpeg?auto=compress&cs=tinysrgb&w=600' },
       { title: 'Letterheads & Envelopes', desc: 'Professional branded stationery.', image: 'https://images.pexels.com/photos/29857196/pexels-photo-29857196.jpeg?auto=compress&cs=tinysrgb&w=600' },
       { title: 'Company Profiles', desc: 'Comprehensive corporate profiles.', image: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Catalogs & Booklets', desc: 'Detailed product catalogs.', image: 'https://images.pexels.com/photos/1750058/pexels-photo-1750058.jpeg?auto=compress&cs=tinysrgb&w=600' },
+      { title: 'Catalogs & Booklets', desc: 'Detailed product catalogs.', image: 'https://images.unsplash.com/photo-1627211448661-0ff9872180db?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
       { title: 'Wedding Cards & Invitation Cards', desc: 'Beautiful custom invitations.', image: 'https://images.pexels.com/photos/689442/pexels-photo-689442.jpeg?auto=compress&cs=tinysrgb&w=600' },
       { title: 'Product Packaging', desc: 'Custom packaging solutions.', image: 'https://images.pexels.com/photos/31438304/pexels-photo-31438304.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Stickers & Labels', desc: 'Die-cut stickers and product labels.', image: 'https://images.pexels.com/photos/2034963/pexels-photo-2034963.jpeg?auto=compress&cs=tinysrgb&w=600' }
+      { title: 'Stickers & Labels', desc: 'Die-cut stickers and product labels.', image: 'https://plus.unsplash.com/premium_photo-1717894321045-6697f5b40ff3?q=80&w=980&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
     ]
   },
   {
     category: 'Branding & Advertising',
     icon: ImageIcon,
     items: [
-      { title: 'Sign Boards', desc: 'Illuminated and standard sign boards.', image: 'https://images.pexels.com/photos/1036371/pexels-photo-1036371.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Hoardings', desc: 'Large outdoor advertising structures.', image: 'https://images.pexels.com/photos/1470405/pexels-photo-1470405.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Outdoor Advertising', desc: 'Billboards and outdoor placements.', image: 'https://images.pexels.com/photos/4005041/pexels-photo-4005041.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Indoor Branding', desc: 'Interior wall graphics and branding.', image: 'https://images.pexels.com/photos/331990/pexels-photo-331990.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Advertising Campaigns', desc: 'Comprehensive ad campaigns.', image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Promotional Materials', desc: 'Branded promotional items.', image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600' }
+      { title: 'Sign Boards', desc: 'Illuminated and standard sign boards.', image: 'https://plus.unsplash.com/premium_photo-1680859126181-6f85456f864e?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+      { title: 'Hoardings', desc: 'Large outdoor advertising structures.', image: 'https://plus.unsplash.com/premium_photo-1748188813885-36ffdca3b955?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+      { title: 'Outdoor Advertising', desc: 'Billboards and outdoor placements.', image: 'https://plus.unsplash.com/premium_photo-1717894321045-6697f5b40ff3?q=80&w=980&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+      { title: 'Indoor Branding', desc: 'Interior wall graphics and branding.', image: 'https://images.unsplash.com/photo-1716703435900-8a3fa400aa30?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+      { title: 'Advertising Campaigns', desc: 'Comprehensive ad campaigns.', image: 'https://plus.unsplash.com/premium_photo-1661425715124-310ec1b49b8a?q=80&w=982&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+      { title: 'Promotional Materials', desc: 'Branded promotional items.', image: 'https://plus.unsplash.com/premium_photo-1752230475676-8fb37ed41631?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
     ]
   },
   {
     category: 'Corporate Branding Solutions',
     icon: Briefcase,
     items: [
-      { title: 'Corporate & Promotional Items', desc: 'Branded merchandise for business.', image: 'https://images.pexels.com/photos/7191981/pexels-photo-7191981.jpeg?auto=compress&cs=tinysrgb&w=600' },
+      { title: 'Corporate & Promotional Items', desc: 'Branded merchandise for business.', image: 'https://plus.unsplash.com/premium_photo-1752230475676-8fb37ed41631?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
       { title: 'Rubber Stamps', desc: 'Custom official rubber stamps.', image: 'https://images.pexels.com/photos/6445417/pexels-photo-6445417.jpeg?auto=compress&cs=tinysrgb&w=600' },
       { title: 'Company Seals', desc: 'Embossing seals for corporate use.', image: 'https://images.pexels.com/photos/8132924/pexels-photo-8132924.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Trophies, Shields & Awards', desc: 'Custom recognition awards.', image: 'https://images.pexels.com/photos/7005086/pexels-photo-7005086.jpeg?auto=compress&cs=tinysrgb&w=600' },
+      { title: 'Trophies, Shields & Awards', desc: 'Custom recognition awards.', image: 'https://images.unsplash.com/photo-1716703435900-8a3fa400aa30?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
       { title: 'Customized T-Shirts', desc: 'Printed branded apparel.', image: 'https://images.pexels.com/photos/991509/pexels-photo-991509.jpeg?auto=compress&cs=tinysrgb&w=600' },
       { title: 'Corporate Gift Items', desc: 'Premium executive gifts.', image: 'https://images.pexels.com/photos/4273439/pexels-photo-4273439.jpeg?auto=compress&cs=tinysrgb&w=600' },
       { title: 'New Product Launch Kits', desc: 'Complete kits for product releases.', image: 'https://images.pexels.com/photos/6347901/pexels-photo-6347901.jpeg?auto=compress&cs=tinysrgb&w=600' }
@@ -63,10 +63,10 @@ const serviceCategories = [
     category: 'Office & IT Solutions',
     icon: Monitor,
     items: [
-      { title: 'Complete Office Stationery', desc: 'All essential office supplies.', image: 'https://images.pexels.com/photos/7718714/pexels-photo-7718714.jpeg?auto=compress&cs=tinysrgb&w=600' },
+      { title: 'Complete Office Stationery', desc: 'All essential office supplies.', image: 'https://images.unsplash.com/photo-1672302377486-71f3fa61bb80?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
       { title: 'Computer & Laptop Sales', desc: 'Desktop and laptop computers.', image: 'https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=600' },
       { title: 'Laptop & Computer Accessories', desc: 'Peripherals and add-ons.', image: 'https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Office Supplies', desc: 'General office materials and equipment.', image: 'https://images.pexels.com/photos/2085797/pexels-photo-2085797.jpeg?auto=compress&cs=tinysrgb&w=600' }
+      { title: 'Office Supplies', desc: 'General office materials and equipment.', image: 'https://images.unsplash.com/photo-1627211448661-0ff9872180db?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
     ]
   }
 ];
