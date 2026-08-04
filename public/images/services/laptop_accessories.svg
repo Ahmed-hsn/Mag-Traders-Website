@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#F8FAFC"/>
+  <g transform="translate(160,120)">
+    <rect x="120" y="120" width="560" height="200" rx="12" fill="#1B4DB7" opacity="0.08"/>
+    <rect x="160" y="160" width="480" height="120" rx="8" fill="#F47920" opacity="0.06"/>
+  </g>
+  <text x="50%" y="82%" fill="#0F172A" font-family="Inter, sans-serif" font-size="48" text-anchor="middle">Laptop & Computer Accessories</text>
+</svg>
