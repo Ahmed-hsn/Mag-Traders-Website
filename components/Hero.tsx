@@ -16,7 +16,7 @@ const item = {
 
 export default function Hero() {
   return (
-    <section className="relative py-24 lg:py-40 flex flex-col items-center justify-center overflow-hidden bg-[#1B4DB7]">
+    <section className="relative py-24 lg:py-40 flex flex-col items-center justify-center overflow-hidden bg-white">
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -27,7 +27,7 @@ export default function Hero() {
         role="img"
         aria-label="Professional printing and design workspace"
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1B4DB7]/[0.92] via-[#1B4DB7]/[0.85] to-[#081428]/[0.92]" />
+      <div className="absolute inset-0 bg-white/90 backdrop-blur-md" />
 
       {/* Subtle pattern */}
       <div className="absolute inset-0 opacity-[0.04]"
@@ -35,8 +35,8 @@ export default function Hero() {
       />
 
       {/* Glowing orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-[#F47920]/4 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-blue-600/6 blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#1B4DB7]/30 blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full bg-[#F47920]/15 blur-[120px] pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center justify-center">
@@ -59,12 +59,12 @@ export default function Hero() {
           {/* Headline */}
           <motion.h1
             variants={item}
-            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-white leading-[1.08] mb-5 md:mb-6"
+            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-[#1B4DB7] leading-[1.08] mb-5 md:mb-6"
           >
             Welcome to{' '}
             <span className="text-[#F47920]">MAG Traders (Pvt.) Ltd.</span>
             <br />
-            <em className="not-italic font-light text-white/85 block mt-3 text-3xl sm:text-4xl md:text-5xl">
+            <em className="not-italic font-light text-slate-600 block mt-3 text-3xl sm:text-4xl md:text-5xl">
               - Your Trusted Printing & Advertising Partner
             </em>
           </motion.h1>
@@ -72,7 +72,7 @@ export default function Hero() {
           {/* Sub */}
           <motion.p
             variants={item}
-            className="text-sm md:text-lg text-white/80 max-w-3xl mx-auto mb-10 md:mb-12 leading-[1.8] font-serif font-light"
+            className="text-sm md:text-lg text-slate-700 max-w-3xl mx-auto mb-10 md:mb-12 leading-[1.8] font-serif font-light"
           >
             At MAG Traders (Pvt.) Ltd., we provide complete printing, branding, advertising, and office solutions under one roof. With a commitment to quality, creativity, and timely delivery, we help businesses, organizations, educational institutions, and individuals bring their ideas to life. Whether you need promotional materials, corporate branding, outdoor advertising, or office supplies, our experienced team ensures professional results that leave a lasting impression.
           </motion.p>
@@ -84,7 +84,7 @@ export default function Hero() {
           >
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-2.5 px-7 py-4 rounded-full text-[0.9rem] font-semibold text-[#1B4DB7] orange-gradient shadow-xl shadow-[#F47920]/25 hover:shadow-2xl hover:shadow-[#F47920]/40 hover:scale-[1.04] active:scale-[0.98] transition-all duration-300 font-body w-full sm:w-auto justify-center"
+              className="group inline-flex items-center gap-2.5 px-7 py-4 rounded-full text-[0.9rem] font-semibold text-white orange-gradient shadow-xl shadow-[#F47920]/25 hover:shadow-2xl hover:shadow-[#F47920]/40 hover:scale-[1.04] active:scale-[0.98] transition-all duration-300 font-body w-full sm:w-auto justify-center"
             >
               <FileText className="w-4 h-4 flex-shrink-0" />
               Get a Quote
@@ -93,7 +93,7 @@ export default function Hero() {
 
             <Link
               href="/services"
-              className="inline-flex items-center gap-2.5 px-7 py-4 rounded-full text-[0.9rem] font-semibold text-white border-2 border-white/25 hover:border-white/50 bg-white/8 hover:bg-white/15 backdrop-blur-sm hover:scale-[1.04] active:scale-[0.98] transition-all duration-300 font-body w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-2.5 px-7 py-4 rounded-full text-[0.9rem] font-semibold text-slate-700 border-2 border-slate-300 hover:border-[#F47920] hover:text-[#F47920] bg-white hover:bg-slate-50 backdrop-blur-sm hover:scale-[1.04] active:scale-[0.98] transition-all duration-300 font-body w-full sm:w-auto justify-center"
             >
               <ShoppingCart className="w-4 h-4 flex-shrink-0" />
               Place an Order

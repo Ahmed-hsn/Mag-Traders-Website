@@ -29,7 +29,7 @@ export default function Footer() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <footer className="bg-[#1B4DB7] text-white">
+    <footer className="bg-white text-slate-800">
       {/* orange top accent */}
       <div className="h-0.5 orange-gradient w-full" />
 
@@ -47,12 +47,11 @@ export default function Footer() {
                 width={56}
                 height={56}
                 className="object-contain"
-                style={{ mixBlendMode: "screen" }}
               />
 
               {/* Logo Text Styled to match image */}
               <div className="flex flex-col justify-center">
-                <span className="text-white text-3xl font-serif font-bold leading-none tracking-tight">
+                <span className="text-[#0C1B3A] text-3xl font-serif font-bold leading-none tracking-tight">
                   MAG
                 </span>
                 <span className="text-[#F47920] text-[11px] font-sans font-bold tracking-[0.25em] uppercase leading-none mt-1">
@@ -64,7 +63,7 @@ export default function Footer() {
             <p className="text-[#F47920] font-semibold text-sm leading-relaxed font-body mb-2">
               MAG Traders (Pvt.) Ltd. – Printing Excellence. Creative Branding. Trusted Solutions
             </p>
-            <p className="text-white/55 text-sm leading-relaxed font-body mb-6">
+            <p className="text-slate-500 text-sm leading-relaxed font-body mb-6">
               Pakistan's trusted partner for premium printing, branding, and
               creative design solutions. Your vision, printed perfectly.
             </p>
@@ -73,26 +72,26 @@ export default function Footer() {
             <div className="space-y-3">
               <a
                 href="tel:+923215851936"
-                className="flex items-center gap-2.5 text-sm text-white/70 hover:text-[#F47920] transition-colors font-body group"
+                className="flex items-center gap-2.5 text-sm text-slate-600 hover:text-[#F47920] transition-colors font-body group"
               >
                 <Phone className="w-4 h-4 text-[#F47920] group-hover:scale-110 transition-transform" />
                 +92 321 5851936
               </a>
               <a
                 href="mailto:Info@magtraders.pk"
-                className="flex items-center gap-2.5 text-sm text-white/70 hover:text-[#F47920] transition-colors font-body group"
+                className="flex items-center gap-2.5 text-sm text-slate-600 hover:text-[#F47920] transition-colors font-body group"
               >
                 <Mail className="w-4 h-4 text-[#F47920] group-hover:scale-110 transition-transform" />
                 Info@magtraders.pk
               </a>
               <a
                 href="mailto:Info@magtraders.com"
-                className="flex items-center gap-2.5 text-sm text-white/70 hover:text-[#F47920] transition-colors font-body group"
+                className="flex items-center gap-2.5 text-sm text-slate-600 hover:text-[#F47920] transition-colors font-body group"
               >
                 <Mail className="w-4 h-4 text-[#F47920] group-hover:scale-110 transition-transform" />
                 Info@magtraders.com
               </a>
-              <div className="flex items-start gap-2.5 text-sm text-white/70 font-body">
+              <div className="flex items-start gap-2.5 text-sm text-slate-600 font-body">
                 <MapPin className="w-4 h-4 text-[#F47920] flex-shrink-0 mt-0.5" />
                 <span>
                   Basement Shop #5, Taj Mahal Plaza, 6th Road Chowk, Rawalpindi
@@ -103,7 +102,7 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h4 className="font-body font-bold text-white text-sm tracking-wider uppercase mb-5">
+            <h4 className="font-body font-bold text-[#0C1B3A] text-sm tracking-wider uppercase mb-5">
               Quick Links
             </h4>
             <ul className="space-y-3">
@@ -111,7 +110,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/60 hover:text-[#F47920] transition-colors font-body inline-flex items-center gap-2 group"
+                    className="text-sm text-slate-600 hover:text-[#F47920] transition-colors font-body inline-flex items-center gap-2 group"
                   >
                     <span className="w-0 group-hover:w-3 h-px bg-[#F47920] transition-all duration-300 overflow-hidden" />
                     {link.label}
@@ -123,7 +122,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-body font-bold text-white text-sm tracking-wider uppercase mb-5">
+            <h4 className="font-body font-bold text-[#0C1B3A] text-sm tracking-wider uppercase mb-5">
               Our Services
             </h4>
             <ul className="space-y-3">
@@ -131,7 +130,7 @@ export default function Footer() {
                 <li key={service}>
                   <Link
                     href="/services"
-                    className="text-sm text-white/60 hover:text-[#F47920] transition-colors font-body inline-flex items-center gap-2 group text-left"
+                    className="text-sm text-slate-600 hover:text-[#F47920] transition-colors font-body inline-flex items-center gap-2 group text-left"
                   >
                     <span className="w-0 group-hover:w-3 h-px bg-[#F47920] transition-all duration-300 overflow-hidden" />
                     {service}
@@ -143,17 +142,17 @@ export default function Footer() {
 
           {/* Business hours */}
           <div>
-            <h4 className="font-body font-bold text-white text-sm tracking-wider uppercase mb-5">
+            <h4 className="font-body font-bold text-[#0C1B3A] text-sm tracking-wider uppercase mb-5">
               Business Hours
             </h4>
             <div className="space-y-3">
               <div className="flex items-start gap-2.5">
                 <Clock className="w-4 h-4 text-[#F47920] mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-sm font-semibold text-white font-body">
+                  <p className="text-sm font-semibold text-slate-800 font-body">
                     Monday – Thursday, Saturday – Sunday
                   </p>
-                  <p className="text-xs text-white/55 font-body">
+                  <p className="text-xs text-slate-500 font-body">
                     9:00 AM – 6:00 PM (PKT)
                   </p>
                 </div>
@@ -161,22 +160,22 @@ export default function Footer() {
               <div className="flex items-start gap-2.5">
                 <Clock className="w-4 h-4 text-[#F47920] mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-sm font-semibold text-white font-body">
+                  <p className="text-sm font-semibold text-slate-800 font-body">
                     Friday
                   </p>
-                  <p className="text-xs text-white/35 font-body">Closed</p>
+                  <p className="text-xs text-slate-500 font-body">Closed</p>
                 </div>
               </div>
             </div>
 
             {/* CTA */}
             <div className="mt-7 p-4 rounded-xl bg-[#F47920]/10 border border-[#F47920]/20">
-              <p className="text-xs text-white/60 font-body mb-3">
+              <p className="text-xs text-slate-600 font-body mb-3">
                 Ready to get started?
               </p>
               <Link
                 href="/contact"
-                className="w-full py-2.5 rounded-lg text-xs font-semibold text-[#1B4DB7] orange-gradient hover:shadow-md transition-all duration-200 font-body block text-center"
+                className="w-full py-2.5 rounded-lg text-xs font-semibold text-white orange-gradient hover:shadow-md transition-all duration-200 font-body block text-center"
               >
                 Get a Free Quote
               </Link>
@@ -186,15 +185,15 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/10">
+      <div className="border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-white/40 font-body text-center sm:text-left">
+          <p className="text-xs text-slate-500 font-body text-center sm:text-left">
             &copy; {new Date().getFullYear()} MAG Traders (Pvt.) Ltd.. All rights reserved.
             | Premium Printing &amp; Branding Solutions, Pakistan
           </p>
           <button
             onClick={scrollToTop}
-            className="w-8 h-8 rounded-full bg-[#F47920]/20 hover:bg-[#F47920]/40 border border-[#F47920]/30 flex items-center justify-center transition-all duration-200 hover:scale-110"
+            className="w-8 h-8 rounded-full bg-[#F47920]/10 hover:bg-[#F47920]/20 border border-[#F47920]/20 flex items-center justify-center transition-all duration-200 hover:scale-110"
             aria-label="Scroll to top"
           >
             <ArrowUp className="w-3.5 h-3.5 text-[#F47920]" />

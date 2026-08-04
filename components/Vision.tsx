@@ -21,9 +21,9 @@ export default function Vision() {
   return (
     <div className="bg-white overflow-hidden">
       {/* Hero Section */}
-      <section className="relative py-24 lg:py-32 bg-[#1B4DB7]">
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20 mix-blend-luminosity" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1B4DB7] via-transparent to-transparent" />
+      <section className="relative py-24 lg:py-32 bg-slate-50">
+        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-[0.03] mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-[#1B4DB7]/5 to-white -z-10" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -32,7 +32,7 @@ export default function Vision() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-8"
           >
-            <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto drop-shadow-2xl bg-white/10 rounded-full p-4 backdrop-blur-sm border border-white/20">
+            <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto drop-shadow-xl bg-white rounded-full p-4 border border-slate-100">
               <Image
                 src="/logo-new.png"
                 alt="MAG Traders (Pvt.) Ltd. Logo"
@@ -46,7 +46,7 @@ export default function Vision() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold font-display text-white mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold font-display text-[#0C1B3A] mb-6"
           >
             Our <span className="text-[#F47920]">Vision</span>
           </motion.h1>
@@ -54,7 +54,7 @@ export default function Vision() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-white/85 max-w-3xl mx-auto font-serif font-light leading-relaxed"
+            className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto font-serif font-light leading-relaxed"
           >
             To become one of Pakistan's leading printing and advertising companies by delivering exceptional quality, outstanding customer service, and innovative branding solutions.
           </motion.p>
@@ -105,8 +105,8 @@ export default function Vision() {
         </div>
       </section>
       {/* Nationwide Delivery Highlight */}
-      <section className="py-24 bg-[#1B4DB7] relative overflow-hidden" ref={ref2}>
-        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+      <section className="py-24 bg-white relative overflow-hidden" ref={ref2}>
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#0C1B3A 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 50 }}

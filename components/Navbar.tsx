@@ -70,7 +70,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 left-0 right-0 z-50 bg-[#1B4DB7] py-2.5 shadow-lg shadow-black/10">
+      <header className="sticky top-0 left-0 right-0 z-50 bg-white py-2.5 shadow-lg shadow-black/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
 
           {/* Logo */}
@@ -89,7 +89,7 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col justify-center leading-[0.8] select-none">
-              <span className="text-2xl md:text-3xl font-serif font-bold text-white tracking-tight">MAG</span>
+              <span className="text-2xl md:text-3xl font-serif font-bold text-[#0C1B3A] tracking-tight">MAG</span>
               <span className="text-[10px] md:text-[11px] font-sans font-black text-[#F47920] tracking-[0.35em] uppercase mt-1">Traders</span>
             </div>
           </Link>
@@ -109,7 +109,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={link.href}
-                    className={`relative px-3.5 py-2 text-sm font-medium rounded-full transition-all duration-300 font-body flex items-center gap-1 ${isActive ? 'text-[#F47920] bg-white/10' : 'text-white hover:text-[#F47920] hover:bg-white/8'
+                    className={`relative px-3.5 py-2 text-sm font-medium rounded-full transition-all duration-300 font-body flex items-center gap-1 ${isActive ? 'text-[#F47920] bg-slate-50' : 'text-slate-700 hover:text-[#F47920] hover:bg-slate-50'
                       }`}
                   >
                     {link.label}
@@ -134,7 +134,7 @@ export default function Navbar() {
           <div className="hidden lg:flex">
             <Link
               href="/contact"
-              className="px-6 py-2.5 rounded-full text-sm font-semibold text-[#1B4DB7] orange-gradient shadow-lg shadow-[#F47920]/30 hover:shadow-[#F47920]/50 transition-all duration-300 hover:scale-105 font-body"
+              className="px-6 py-2.5 rounded-full text-sm font-semibold text-white orange-gradient shadow-lg shadow-[#F47920]/30 hover:shadow-[#F47920]/50 transition-all duration-300 hover:scale-105 font-body"
             >
               Get a Quote
             </Link>
@@ -143,7 +143,7 @@ export default function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 rounded-full text-white hover:bg-white/10 transition-colors duration-200"
+            className="lg:hidden p-2 rounded-full text-slate-800 hover:bg-slate-100 transition-colors duration-200"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -253,22 +253,22 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ duration: 0.35, ease: [0.32, 0.72, 0, 1] }}
-              className="fixed top-0 right-0 bottom-0 z-50 w-[300px] bg-[#1B4DB7] flex flex-col shadow-2xl"
+              className="fixed top-0 right-0 bottom-0 z-50 w-[300px] bg-white flex flex-col shadow-2xl"
             >
               {/* Drawer header */}
-              <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
+              <div className="flex items-center justify-between px-6 py-5 border-b border-slate-100">
                 <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3">
                   <div className="relative w-10 h-10">
                     <Image src="/logo-new.png" alt="Logo" fill className="object-contain" />
                   </div>
                   <div className="flex flex-col leading-[0.8]">
-                    <span className="text-xl font-serif font-bold text-white">MAG</span>
+                    <span className="text-xl font-serif font-bold text-[#0C1B3A]">MAG</span>
                     <span className="text-[9px] font-sans font-bold text-[#F47920] tracking-[0.2em] uppercase">Traders</span>
                   </div>
                 </Link>
                 <button
                   onClick={() => setMobileOpen(false)}
-                  className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white"
+                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-800 transition-colors"
                 >
                   <X className="w-4 h-4" />
                 </button>
@@ -288,7 +288,7 @@ export default function Navbar() {
                           onClick={() => !isTrigger && setMobileOpen(false)}
                           className={`flex-1 flex items-center justify-between px-4 py-3 rounded-2xl text-sm font-medium transition-all duration-200 font-body ${isActive
                               ? 'bg-[#F47920]/15 text-[#F47920] border border-[#F47920]/30'
-                              : 'text-white/75 hover:text-white hover:bg-white/8'
+                              : 'text-slate-600 hover:text-[#F47920] hover:bg-slate-50'
                             }`}
                         >
                           {link.label}
@@ -299,7 +299,7 @@ export default function Navbar() {
                         {isTrigger && (
                           <button
                             onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                            className="p-3 ml-2 text-white/75 hover:text-white"
+                            className="p-3 ml-2 text-slate-500 hover:text-[#F47920]"
                           >
                             <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180' : ''}`} />
                           </button>
@@ -313,7 +313,7 @@ export default function Navbar() {
                           animate={{ height: 'auto', opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.25 }}
-                          className="overflow-hidden bg-black/20 rounded-xl mt-1 mb-2"
+                          className="overflow-hidden bg-slate-50 rounded-xl mt-1 mb-2"
                         >
                           <div className="p-4 space-y-5">
                             {serviceCategories.map((cat) => (
@@ -322,13 +322,13 @@ export default function Navbar() {
                                   <cat.icon className="w-4 h-4 text-[#F47920]" />
                                   <h5 className="text-[#F47920] text-xs font-bold uppercase tracking-wider">{cat.title}</h5>
                                 </div>
-                                <ul className="space-y-1.5 pl-6 border-l border-white/10">
+                                <ul className="space-y-1.5 pl-6 border-l border-slate-200">
                                   {cat.items.map((item) => (
                                     <li key={item}>
                                       <Link
                                         href={cat.href}
                                         onClick={() => setMobileOpen(false)}
-                                        className="text-white/60 text-sm hover:text-white transition-colors block py-0.5"
+                                        className="text-slate-500 text-sm hover:text-[#F47920] transition-colors block py-0.5"
                                       >
                                         {item}
                                       </Link>
@@ -340,7 +340,7 @@ export default function Navbar() {
                             <Link
                               href="/services"
                               onClick={() => setMobileOpen(false)}
-                              className="block w-full text-center py-2 mt-1 bg-white/5 rounded-lg text-sm text-white hover:bg-white/10 transition-colors"
+                              className="block w-full text-center py-2 mt-1 bg-slate-100 rounded-lg text-sm text-slate-700 hover:bg-slate-200 hover:text-[#F47920] transition-colors"
                             >
                               View All Services
                             </Link>
@@ -353,11 +353,11 @@ export default function Navbar() {
               </nav>
 
               {/* CTA */}
-              <div className="px-4 pb-8 pt-4 border-t border-white/10">
+              <div className="px-4 pb-8 pt-4 border-t border-slate-100">
                 <Link
                   href="/contact"
                   onClick={() => setMobileOpen(false)}
-                  className="w-full flex justify-center py-3.5 rounded-full text-sm font-semibold text-[#1B4DB7] orange-gradient shadow-lg font-body hover:shadow-[#F47920]/40 transition-shadow"
+                  className="w-full flex justify-center py-3.5 rounded-full text-sm font-semibold text-white orange-gradient shadow-lg font-body hover:shadow-[#F47920]/40 transition-shadow"
                 >
                   Get a Free Quote
                 </Link>
