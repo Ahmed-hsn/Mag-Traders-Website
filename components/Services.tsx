@@ -50,13 +50,13 @@ const serviceCategories = [
     category: 'Corporate Branding Solutions',
     icon: Briefcase,
     items: [
-      { title: 'Corporate & Promotional Items', desc: 'Branded merchandise for business.', image: 'https://plus.unsplash.com/premium_photo-1752230475676-8fb37ed41631?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+      { title: 'Corporate & Promotional Items', desc: 'Branded merchandise for business.', image: 'https://images.unsplash.com/photo-1702609342206-c37562b99740?q=80&w=600&auto=format&fit=crop' },
       { title: 'Rubber Stamps', desc: 'Custom official rubber stamps.', image: 'https://images.pexels.com/photos/6445417/pexels-photo-6445417.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Company Seals', desc: 'Embossing seals for corporate use.', image: 'https://images.pexels.com/photos/8132924/pexels-photo-8132924.jpeg?auto=compress&cs=tinysrgb&w=600' },
+      { title: 'Company Seals', desc: 'Embossing seals for corporate use.', image: 'https://img.magnific.com/free-vector/illustration-circle-stamp-banner-vector_53876-27185.jpg?semt=ais_hybrid&w=740&q=80' },
       { title: 'Trophies, Shields & Awards', desc: 'Custom recognition awards.', image: 'https://images.unsplash.com/photo-1716703435900-8a3fa400aa30?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
       { title: 'Customized T-Shirts', desc: 'Printed branded apparel.', image: 'https://images.pexels.com/photos/991509/pexels-photo-991509.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Corporate Gift Items', desc: 'Premium executive gifts.', image: 'https://images.pexels.com/photos/4273439/pexels-photo-4273439.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'New Product Launch Kits', desc: 'Complete kits for product releases.', image: 'https://images.pexels.com/photos/6347901/pexels-photo-6347901.jpeg?auto=compress&cs=tinysrgb&w=600' }
+      { title: 'Corporate Gift Items', desc: 'Premium executive gifts.', image: 'https://images.unsplash.com/photo-1578704694513-08946e996642?q=80&w=600&auto=format&fit=crop' },
+      { title: 'New Product Launch Kits', desc: 'Complete kits for product releases.', image: 'https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?q=80&w=600&auto=format&fit=crop' }
     ]
   },
   {
@@ -65,8 +65,8 @@ const serviceCategories = [
     items: [
       { title: 'Complete Office Stationery', desc: 'All essential office supplies.', image: 'https://images.unsplash.com/photo-1672302377486-71f3fa61bb80?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
       { title: 'Computer & Laptop Sales', desc: 'Desktop and laptop computers.', image: 'https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Laptop & Computer Accessories', desc: 'Peripherals and add-ons.', image: 'https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=600' },
-      { title: 'Office Supplies', desc: 'General office materials and equipment.', image: 'https://images.unsplash.com/photo-1627211448661-0ff9872180db?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
+      { title: 'Laptop & Computer Accessories', desc: 'Peripherals and add-ons.', image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=600&auto=format&fit=crop' },
+      { title: 'Office Supplies', desc: 'General office materials and equipment.', image: 'https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?q=80&w=800&auto=format&fit=crop' }
     ]
   }
 ];
